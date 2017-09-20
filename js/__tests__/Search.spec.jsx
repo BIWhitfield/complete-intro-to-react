@@ -6,17 +6,17 @@ import ShowCard from '../ShowCard';
 
 describe('Search', () => {
   it('renders correctly', () => {
-    const component = shallow(<Search />);
+    const component = shallow(<Search shows={preload.shows} />);
     expect(component).toMatchSnapshot();
   });
 
   it('should render correct amount of shows', () => {
-    const component = shallow(<Search />);
+    const component = shallow(<Search shows={preload.shows} />);
     expect(component.find(ShowCard).length).toEqual(preload.shows.length);
   });
 
   it('should render correct amount of shows based on search terms', () => {
-    const component = shallow(<Search />);
+    const component = shallow(<Search shows={preload.shows} />);
     const searchWord = 'black';
     // simulate the onChange event on the input in Search - find 'input' tag (can work with classNames too)
     // simulate 'change' with target and value of our search word. (e.target.value)

@@ -12,5 +12,10 @@
       }
     ]
   ],
-  "plugins": ["babel-plugin-transform-class-properties"]
+  "plugins": ["babel-plugin-transform-class-properties"],
+  "env": {
+    "test": {
+      "plugins": ["babel-plugin-transform-es2015-modules-commonjs"]
+    }
+  }
 }

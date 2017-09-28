@@ -14,6 +14,7 @@ const fourOhFour = () => <h1>404</h1>;
 
 const App = () => (
   <BrowserRouter>
+
     <Provider store={store}>
       <div className="app">
         <Switch>

@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom';
 import { setSearchTerm } from './actionCreators';
 
 const Header = (props: { showSearch?: boolean, handleSearchTermChange: Function, searchTerm: string }) => {
+
   let utilSpace;
   if (props.showSearch) {
     utilSpace = (

@@ -1,10 +1,8 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import Landing from '../Landing';
+import { Unwrapped as LandingUnwrapped } from '../Landing';
 
-describe('Landing', () => {
-  it('renders correctly', () => {
-    const component = shallow(<Landing />);
-    expect(component).toMatchSnapshot();
-  });
+test('renders correctly', () => {
+  const component = shallow(<LandingUnwrapped />);
+  expect(component).toMatchSnapshot();
 });

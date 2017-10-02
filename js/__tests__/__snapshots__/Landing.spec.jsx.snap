@@ -1,21 +1,25 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Landing renders correctly 1`] = `
+exports[`renders correctly 1`] = `
 <div
   className="landing"
 >
   <h1>
     svideo
   </h1>
-  <input
-    placeholder="Search"
-    type="text"
-  />
-  <Link
-    replace={false}
-    to="/search"
+  <form
+    onSubmit={[Function]}
   >
-    or Browse All
-  </Link>
+    <input
+      placeholder="Search"
+      type="text"
+    />
+    <Link
+      replace={false}
+      to="/search"
+    >
+      or Browse All
+    </Link>
+  </form>
 </div>
 `;

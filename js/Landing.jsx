@@ -45,5 +45,5 @@ const mapDispatchToProps = (dispatch: Function) => ({
 const mapStateToProps = state => ({
   searchTerm: state.searchTerm
 });
-
+export const Unwrapped = Landing;
 export default connect(mapStateToProps, mapDispatchToProps)(Landing);
